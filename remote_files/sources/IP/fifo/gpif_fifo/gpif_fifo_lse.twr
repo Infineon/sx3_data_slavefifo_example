@@ -1,0 +1,231 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Tue Sep 29 19:45:54 2020
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     gpif_fifo
+Constraint file: gpif_fifo_temp_lse.sdc 
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk500 [get_nets Clock]
+            943 items scored, 325 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 4.514ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3BX    CK             FF_29  (from Clock +)
+   Destination:    FD1P3DX    D              FF_30  (to Clock -)
+
+   Delay:                   9.689ns  (20.5% logic, 79.5% route), 13 logic levels.
+
+ Constraint Details:
+
+      9.689ns data_path FF_29 to FF_30 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 4.514ns
+
+ Path Details: FF_29 to FF_30
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              FF_29 (from Clock)
+Route         2   e 1.258                                  Empty
+LUT4        ---     0.166              A to Z              INV_2
+Route         1   e 1.020                                  invout_0
+LUT4        ---     0.166              B to Z              AND2_t2
+Route        26   e 1.671                                  rden_i
+LUT4        ---     0.166              A to Z              INV_1
+Route         1   e 1.020                                  rden_i_inv
+LUT4        ---     0.166              B to Z              AND2_t1
+Route        16   e 1.574                                  cnt_con
+A1_TO_FCO   ---     0.329           A[2] to COUT           bdcnt_bctr_cia
+Route         1   e 0.020                                  bdcnt_bctr_ci
+FCI_TO_FCO  ---     0.051            CIN to COUT           bdcnt_bctr_0
+Route         1   e 0.020                                  co0
+FCI_TO_FCO  ---     0.051            CIN to COUT           bdcnt_bctr_1
+Route         1   e 0.020                                  co1
+FCI_TO_FCO  ---     0.051            CIN to COUT           bdcnt_bctr_2
+Route         1   e 0.020                                  co2
+FCI_TO_FCO  ---     0.051            CIN to COUT           bdcnt_bctr_3
+Route         1   e 0.020                                  co3
+FCI_TO_FCO  ---     0.051            CIN to COUT           bdcnt_bctr_4
+Route         1   e 0.020                                  co4
+FCI_TO_FCO  ---     0.051            CIN to COUT           bdcnt_bctr_5
+Route         1   e 0.020                                  co5
+FCI_TO_F    ---     0.322            CIN to S[2]           bdcnt_bctr_6
+Route         1   e 1.020                                  ifcount_13
+                  --------
+                    9.689  (20.5% logic, 79.5% route), 13 logic levels.
+
+
+Error:  The following path violates requirements by 4.514ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3BX    CK             FF_29  (from Clock +)
+   Destination:    FD1P3DX    D              FF_30  (to Clock -)
+
+   Delay:                   9.689ns  (20.5% logic, 79.5% route), 13 logic levels.
+
+ Constraint Details:
+
+      9.689ns data_path FF_29 to FF_30 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 4.514ns
+
+ Path Details: FF_29 to FF_30
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              FF_29 (from Clock)
+Route         2   e 1.258                                  Empty
+LUT4        ---     0.166              A to Z              INV_2
+Route         1   e 1.020                                  invout_0
+LUT4        ---     0.166              B to Z              AND2_t2
+Route        26   e 1.671                                  rden_i
+LUT4        ---     0.166              A to Z              INV_1
+Route         1   e 1.020                                  rden_i_inv
+LUT4        ---     0.166              B to Z              AND2_t1
+Route        16   e 1.574                                  cnt_con
+A1_TO_FCO   ---     0.329           B[2] to COUT           bdcnt_bctr_cia
+Route         1   e 0.020                                  bdcnt_bctr_ci
+FCI_TO_FCO  ---     0.051            CIN to COUT           bdcnt_bctr_0
+Route         1   e 0.020                                  co0
+FCI_TO_FCO  ---     0.051            CIN to COUT           bdcnt_bctr_1
+Route         1   e 0.020                                  co1
+FCI_TO_FCO  ---     0.051            CIN to COUT           bdcnt_bctr_2
+Route         1   e 0.020                                  co2
+FCI_TO_FCO  ---     0.051            CIN to COUT           bdcnt_bctr_3
+Route         1   e 0.020                                  co3
+FCI_TO_FCO  ---     0.051            CIN to COUT           bdcnt_bctr_4
+Route         1   e 0.020                                  co4
+FCI_TO_FCO  ---     0.051            CIN to COUT           bdcnt_bctr_5
+Route         1   e 0.020                                  co5
+FCI_TO_F    ---     0.322            CIN to S[2]           bdcnt_bctr_6
+Route         1   e 1.020                                  ifcount_13
+                  --------
+                    9.689  (20.5% logic, 79.5% route), 13 logic levels.
+
+
+Error:  The following path violates requirements by 4.514ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3BX    CK             FF_29  (from Clock +)
+   Destination:    FD1P3DX    D              FF_31  (to Clock -)
+
+   Delay:                   9.689ns  (20.5% logic, 79.5% route), 13 logic levels.
+
+ Constraint Details:
+
+      9.689ns data_path FF_29 to FF_31 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 4.514ns
+
+ Path Details: FF_29 to FF_31
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              FF_29 (from Clock)
+Route         2   e 1.258                                  Empty
+LUT4        ---     0.166              A to Z              INV_2
+Route         1   e 1.020                                  invout_0
+LUT4        ---     0.166              B to Z              AND2_t2
+Route        26   e 1.671                                  rden_i
+LUT4        ---     0.166              A to Z              INV_1
+Route         1   e 1.020                                  rden_i_inv
+LUT4        ---     0.166              B to Z              AND2_t1
+Route        16   e 1.574                                  cnt_con
+A1_TO_FCO   ---     0.329           A[2] to COUT           bdcnt_bctr_cia
+Route         1   e 0.020                                  bdcnt_bctr_ci
+FCI_TO_FCO  ---     0.051            CIN to COUT           bdcnt_bctr_0
+Route         1   e 0.020                                  co0
+FCI_TO_FCO  ---     0.051            CIN to COUT           bdcnt_bctr_1
+Route         1   e 0.020                                  co1
+FCI_TO_FCO  ---     0.051            CIN to COUT           bdcnt_bctr_2
+Route         1   e 0.020                                  co2
+FCI_TO_FCO  ---     0.051            CIN to COUT           bdcnt_bctr_3
+Route         1   e 0.020                                  co3
+FCI_TO_FCO  ---     0.051            CIN to COUT           bdcnt_bctr_4
+Route         1   e 0.020                                  co4
+FCI_TO_FCO  ---     0.051            CIN to COUT           bdcnt_bctr_5
+Route         1   e 0.020                                  co5
+FCI_TO_F    ---     0.322            CIN to S[2]           bdcnt_bctr_6
+Route         1   e 1.020                                  ifcount_12
+                  --------
+                    9.689  (20.5% logic, 79.5% route), 13 logic levels.
+
+Warning: 9.514 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk500 [get_nets Clock]                 |     5.000 ns|     9.514 ns|    13 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+cnt_con                                 |      16|     280|     86.15%
+                                        |        |        |
+Full                                    |       2|     169|     52.00%
+                                        |        |        |
+invout_1                                |       1|     169|     52.00%
+                                        |        |        |
+wren_i                                  |      39|     169|     52.00%
+                                        |        |        |
+Empty                                   |       2|     156|     48.00%
+                                        |        |        |
+invout_0                                |       1|     156|     48.00%
+                                        |        |        |
+rden_i                                  |      26|     156|     48.00%
+                                        |        |        |
+rden_i_inv                              |       1|     140|     43.08%
+                                        |        |        |
+co2                                     |       1|     128|     39.38%
+                                        |        |        |
+co1                                     |       1|     120|     36.92%
+                                        |        |        |
+co3                                     |       1|     120|     36.92%
+                                        |        |        |
+co0                                     |       1|      96|     29.54%
+                                        |        |        |
+co4                                     |       1|      96|     29.54%
+                                        |        |        |
+bdcnt_bctr_ci                           |       1|      56|     17.23%
+                                        |        |        |
+co5                                     |       1|      56|     17.23%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+Timing summary:
+---------------
+
+Timing errors: 325  Score: 1079207
+
+Constraints cover  943 paths, 132 nets, and 520 connections (99.2% coverage)
+
+
+Peak memory: 89485312 bytes, TRCE: 2670592 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 

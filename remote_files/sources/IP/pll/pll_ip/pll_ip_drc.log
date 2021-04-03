@@ -1,0 +1,3 @@
+Results of NGD DRC are available in pll_ip_drc.log.
+WARNING - synthesis: DRC checking was skipped because the -ngo option was used.
+Writing NGD file F:/CYPRESS_ECP/slfifo_prj_appnote_2/IP/pll/pll_ip/pll_ip.ngo.

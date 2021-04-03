@@ -1,0 +1,3 @@
+Results of NGD DRC are available in fifo_ip_drc.log.
+WARNING - synthesis: DRC checking was skipped because the -ngo option was used.
+Writing NGD file F:/CYPRESS_ECP/slfifo_prj/PAR/gpif_fifo_msb/fifo_ip/fifo_ip.ngo.

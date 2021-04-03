@@ -1,0 +1,38 @@
+SCUBA, Version Diamond (64-bit) 3.10.0.111.2
+Wed Sep 23 18:09:32 2020
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+    Issued command   : C:\lscc\diamond\3.10_x64\ispfpga\bin\nt64\scuba.exe -w -n fifo_ip -lang verilog -synth lse -bus_exp 7 -bb -arch sa5p00 -type ebfifo -sync_mode -depth 4096 -width 16 -regout -no_enable -pe -1 -pf -1 -sync_reset -fdc F:/CYPRESS_ECP/slfifo_prj/PAR/gpif_fifo_msb/fifo_ip/fifo_ip.fdc 
+    Circuit name     : fifo_ip
+    Module type      : fifoblk
+    Module Version   : 5.1
+    Ports            : 
+	Inputs       : Data[15:0], Clock, WrEn, RdEn, Reset
+	Outputs      : Q[15:0], Empty, Full
+    I/O buffer       : not inserted
+    EDIF output      : fifo_ip.edn
+    Verilog output   : fifo_ip.v
+    Verilog template : fifo_ip_tmpl.v
+    Verilog testbench: tb_fifo_ip_tmpl.v
+    Verilog purpose  : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : fifo_ip.srp
+    Element Usage    :
+          CCU2C : 42
+           AND2 : 3
+        FD1P3DX : 39
+        FD1S3BX : 1
+        FD1S3DX : 1
+            INV : 4
+       ROM16X1A : 2
+           XOR2 : 1
+         DP16KD : 4
+    Estimated Resource Usage:
+            LUT : 90
+            EBR : 4
+            Reg : 41

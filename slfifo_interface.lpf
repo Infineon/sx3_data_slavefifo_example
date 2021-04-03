@@ -1,0 +1,172 @@
+RVL_ALIAS "sl_clk" "sl_clk";
+BLOCK RESETPATHS ;
+BLOCK ASYNCPATHS ;
+#	ON-Board Oscillator
+LOCATE COMP "clk_i" SITE "P3" ;
+IOBUF PORT "clk_i" IO_TYPE=LVDS PULLMODE=NONE ;
+LOCATE COMP "rst_i" SITE "E13" ;
+IOBUF PORT "rst_i" IO_TYPE=LVCMOS18 PULLMODE=NONE ;
+#	FX3 interface
+LOCATE COMP "slclk_o" SITE "D11" ;
+LOCATE COMP "sldata_io[0]" SITE "G20" ;
+LOCATE COMP "sldata_io[1]" SITE "G19" ;
+LOCATE COMP "sldata_io[2]" SITE "F19" ;
+LOCATE COMP "sldata_io[3]" SITE "H18" ;
+LOCATE COMP "sldata_io[4]" SITE "G16" ;
+LOCATE COMP "sldata_io[5]" SITE "F20" ;
+LOCATE COMP "sldata_io[6]" SITE "H20" ;
+LOCATE COMP "sldata_io[7]" SITE "J16" ;
+LOCATE COMP "sldata_io[8]" SITE "J19" ;
+LOCATE COMP "sldata_io[9]" SITE "H16" ;
+LOCATE COMP "sldata_io[10]" SITE "K19" ;
+LOCATE COMP "sldata_io[11]" SITE "K20" ;
+LOCATE COMP "sldata_io[12]" SITE "J20" ;
+LOCATE COMP "sldata_io[13]" SITE "J17" ;
+LOCATE COMP "sldata_io[14]" SITE "J18" ;
+LOCATE COMP "sldata_io[15]" SITE "K18" ;
+LOCATE COMP "sldata_io[16]" SITE "E17" ;
+LOCATE COMP "sldata_io[17]" SITE "E16" ;
+LOCATE COMP "sldata_io[18]" SITE "F16" ;
+LOCATE COMP "sldata_io[19]" SITE "F17" ;
+LOCATE COMP "sldata_io[20]" SITE "D17" ;
+LOCATE COMP "sldata_io[21]" SITE "E18" ;
+LOCATE COMP "sldata_io[22]" SITE "F18" ;
+LOCATE COMP "sldata_io[23]" SITE "C18" ;
+LOCATE COMP "sldata_io[24]" SITE "C20" ;
+LOCATE COMP "sldata_io[25]" SITE "G18" ;
+LOCATE COMP "sldata_io[26]" SITE "D18" ;
+LOCATE COMP "sldata_io[27]" SITE "D19" ;
+LOCATE COMP "sldata_io[28]" SITE "E19" ;
+LOCATE COMP "sldata_io[29]" SITE "H17" ;
+LOCATE COMP "sldata_io[30]" SITE "E20" ;
+LOCATE COMP "sldata_io[31]" SITE "D20" ;
+LOCATE COMP "slcs_o" SITE "D12" ;
+LOCATE COMP "slwr_o" SITE "A13" ;
+LOCATE COMP "sloe_o" SITE "C12" ;
+LOCATE COMP "slrd_o" SITE "B12" ;
+LOCATE COMP "flagb_i" SITE "E12" ;
+LOCATE COMP "flaga_i" SITE "E11" ;
+# LOCATE COMP "flagc_i" SITE "B13" ;
+# LOCATE COMP "flagd_i" SITE "C8" ;
+LOCATE COMP "pktend_o" SITE "A12" ;
+LOCATE COMP "sladdr_o[0]" SITE "A14" ;
+LOCATE COMP "sladdr_o[1]" SITE "C14" ;
+PROHIBIT SITE "V2" ;
+PROHIBIT SITE "W2" ;
+PROHIBIT SITE "R2" ;
+SYSCONFIG SLAVE_SPI_PORT=DISABLE SLAVE_PARALLEL_PORT=DISABLE CONFIG_IOVOLTAGE=1.8 ;
+IOBUF PORT "slclk_o" IO_TYPE=LVCMOS18 ;
+IOBUF PORT "sldata_io[0]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "sldata_io[1]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "sldata_io[2]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "sldata_io[3]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "sldata_io[4]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "sldata_io[5]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "sldata_io[6]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "sldata_io[7]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "sldata_io[8]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "sldata_io[9]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "sldata_io[10]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "sldata_io[11]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "sldata_io[12]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "sldata_io[13]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "sldata_io[14]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "sldata_io[15]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "sldata_io[16]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "sldata_io[17]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "sldata_io[18]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "sldata_io[19]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "sldata_io[20]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "sldata_io[21]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "sldata_io[22]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "sldata_io[23]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "sldata_io[24]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "sldata_io[25]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "sldata_io[26]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "sldata_io[27]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "sldata_io[28]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "sldata_io[29]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "sldata_io[30]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "sldata_io[31]" IO_TYPE=LVCMOS18 DRIVE=8 PULLMODE=NONE ;
+IOBUF PORT "slcs_o" IO_TYPE=LVCMOS18 ;
+IOBUF PORT "slwr_o" IO_TYPE=LVCMOS18 ;
+IOBUF PORT "slrd_o" IO_TYPE=LVCMOS18 ;
+IOBUF PORT "flagb_i" IO_TYPE=LVCMOS18 PULLMODE=NONE ;
+IOBUF PORT "flaga_i" IO_TYPE=LVCMOS18 PULLMODE=NONE ;
+IOBUF PORT "pktend_o" IO_TYPE=LVCMOS18 ;
+IOBUF PORT "sladdr_o[0]" IO_TYPE=LVCMOS18 ;
+IOBUF PORT "sladdr_o[1]" IO_TYPE=LVCMOS18 ;
+IOBUF PORT "sloe_o" IO_TYPE=LVCMOS18 ;
+FREQUENCY PORT "clk_i" 100.000000 MHz ;
+BLOCK JTAGPATHS ;
+#INPUT_SETUP PORT "flagb_i" INPUT_DELAY 5.000000 ns HOLD 0.000000 ns CLKNET "sl_clk" ;
+#INPUT_SETUP PORT "flaga_i" INPUT_DELAY 5.000000 ns HOLD 0.000000 ns CLKNET "sl_clk" ;
+# CLOCK_TO_OUT PORT "sldata_io[*]" OUTPUT_DELAY 2.000000 ns MIN 0.000000 ns CLKNET "sl_clk" ;
+# CLOCK_TO_OUT PORT "slcs_o" OUTPUT_DELAY 3.000000 ns MIN 0.000000 ns CLKNET "sl_clk" ;
+# CLOCK_TO_OUT PORT "slwr_o" OUTPUT_DELAY 3.000000 ns MIN 0.000000 ns CLKNET "sl_clk" ;
+# CLOCK_TO_OUT PORT "slrd_o" OUTPUT_DELAY 2.000000 ns MIN 0.000000 ns CLKNET "sl_clk" ;
+# CLOCK_TO_OUT PORT "pktend_o" OUTPUT_DELAY 3.000000 ns MIN 0.000000 ns CLKNET "sl_clk" ;
+# Modified Constraints
+# -----------------------------------------------------------------
+#
+# Clock to Output Delay
+#
+# -----------------------------------------------------------------
+# -----------------------------------------------------------------
+#
+# Maximum Propogation Delay:
+#
+#  Where, P is Period of Clock (10 ns)
+#         Tsp is the Setup Time of SX3 (2 ns)
+#         PDMAXb is the Maximum Board Propogation Delay (0.25 ns)
+#         PDMINb is the Minimum Board Propogation Delay (0.1 ns)
+#         Tskew is the clock skew (0.1 ns)
+#         Thp is Hold Time of SX3 (0 ns)
+#
+# Maximum Value = P - Tsp - PDMAXb + Tskew
+#
+#               = 10 - 2 - 0.25 + 0.1 = 7.85 ns
+#
+# Minumum Value = Thp - PDMINb + Tskew
+#
+#               = 0 - 0.1 + 0.1 = 0 ns
+#
+# -----------------------------------------------------------------
+CLOCK_TO_OUT PORT "sldata_io[*]" MAX 7.850000 ns MIN 0.000000 ns CLKNET "sl_clk" CLKOUT PORT "slclk_o" ;
+CLOCK_TO_OUT PORT "sladdr_o[*]" MAX 7.850000 ns MIN 0.500000 ns CLKNET "sl_clk" CLKOUT PORT "slclk_o" ;
+CLOCK_TO_OUT PORT "slwr_o" MAX 7.850000 ns MIN 0.500000 ns CLKNET "sl_clk" CLKOUT PORT "slclk_o" ;
+CLOCK_TO_OUT PORT "slrd_o" MAX 7.850000 ns MIN 0.500000 ns CLKNET "sl_clk" CLKOUT PORT "slclk_o" ;
+CLOCK_TO_OUT PORT "sloe_o" MAX 7.850000 ns MIN 0.000000 ns CLKNET "sl_clk" CLKOUT PORT "slclk_o" ;
+FREQUENCY NET "sl_clk" 100.000000 MHz ;
+
+# -----------------------------------------------------------------
+#
+# Input Delay
+#
+# -----------------------------------------------------------------
+# -----------------------------------------------------------------
+#
+# Maximum Propogation Delay:
+#
+#  Where, P is Period of Clock (10 ns)
+#         PDMAXp is the Maximum Clock to Out Delay (8 ns)
+#         PDMINp is the Minimum Clock to Out Delay (0.1 ns)
+#         Tskew is the clock skew (0.1 ns)
+#
+# Maximum Value = P - PDMAXp - PDMAXb - Tskew
+#
+#               = 10 - 8 - 0.25 - 0.1 = 1.65 ns
+#
+# Minumum Value = PDMAXp + PDMAXb + Tskew
+#
+#               = 0.1 + 0.1 + 0.1 = 0.3 ns
+#
+# -----------------------------------------------------------------
+
+# Input Delay
+INPUT PORT "flaga_i"      SETUP 1.65 ns HOLD 0.3 ns CLKNET "sl_clk" ;
+INPUT PORT "flagb_i"      SETUP 1.65 ns HOLD 0.3 ns CLKNET "sl_clk" ;
+
+# For Data, PDMAXp = 7 ns
+INPUT PORT "sldata_io[*]" SETUP 2.65 ns HOLD 0.3 ns CLKNET "sl_clk" ;
+

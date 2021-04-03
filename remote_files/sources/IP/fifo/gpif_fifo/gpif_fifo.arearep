@@ -1,0 +1,17 @@
+----------------------------------------------------------------------
+Report for cell gpif_fifo.TECH
+Register bits:  44 of 44457 (0.099%)
+I/O cells:      0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               AND2         3          100.0
+                              CCU2C        42          100.0
+                             DP16KD         8          100.0
+                            FD1P3DX        42          100.0
+                            FD1S3BX         1          100.0
+                            FD1S3DX         1          100.0
+                                GSR         1          100.0
+                                INV         4          100.0
+                           ROM16X1A         2          100.0
+                               XOR2         1          100.0
+                              TOTAL       105

@@ -1,0 +1,199 @@
+synthesis:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Sep 23 18:09:32 2020
+
+
+Command Line:  C:\lscc\diamond\3.10_x64\ispfpga\bin\nt64\synthesis.exe -f fifo_ip.synproj -sdc F:/CYPRESS_ECP/slfifo_prj/PAR/gpif_fifo_msb/fifo_ip/fifo_ip.ldc -gui 
+
+Synthesis options:
+The -a option is ecp5u.
+The -s option is 6.
+The -t option is CABGA381.
+The -d option is LFE5U-45F.
+Using package CABGA381.
+Using performance grade 6.
+                                                          
+
+##########################################################
+
+### Lattice Family : ECP5U
+
+### Device  : LFE5U-45F
+
+### Package : CABGA381
+
+### Speed   : 6
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Balanced
+Top-level module name = fifo_ip.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true (default)
+DSP utilization = 100 % (default)
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Use IO Insertion = FALSE
+Use IO Reg = FALSE (implied)
+WARNING - synthesis: Cannot pack registers into I/Os because use_io_insertion is FALSE.
+WARNING - synthesis: Ignoring user setting of use_io_reg. Value is set to FALSE.
+Use IO Reg = FALSE
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p F:/CYPRESS_ECP/slfifo_prj/PAR/gpif_fifo_msb/fifo_ip (searchpath added)
+Verilog design file = C:/lscc/diamond/3.10_x64/cae_library/synthesis/verilog/ecp5u.v
+Verilog design file = C:/lscc/diamond/3.10_x64/cae_library/synthesis/verilog/pmi_def.v
+Verilog design file = F:/CYPRESS_ECP/slfifo_prj/PAR/gpif_fifo_msb/fifo_ip/fifo_ip.v
+NGO file = F:/CYPRESS_ECP/slfifo_prj/PAR/gpif_fifo_msb/fifo_ip/fifo_ip.ngo
+WARNING - synthesis: Option -force_gsr will be set to false when option -output_edif/-ngo are set
+-sdc option: SDC file input is F:/CYPRESS_ECP/slfifo_prj/PAR/gpif_fifo_msb/fifo_ip/fifo_ip.ldc.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/lscc/diamond/3.10_x64/cae_library/synthesis/verilog/ecp5u.v. VERI-1482
+Analyzing Verilog file c:/lscc/diamond/3.10_x64/cae_library/synthesis/verilog/pmi_def.v. VERI-1482
+Analyzing Verilog file f:/cypress_ecp/slfifo_prj/par/gpif_fifo_msb/fifo_ip/fifo_ip.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Top module name (Verilog): fifo_ip
+INFO - synthesis: f:/cypress_ecp/slfifo_prj/par/gpif_fifo_msb/fifo_ip/fifo_ip.v(8): compiling module fifo_ip. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(25): compiling module AND2. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(367): compiling module INV. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(810): compiling module XOR2. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(710): compiling module ROM16X1A(initval=16'b011001000110010). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(866): compiling module DP16KD(DATA_WIDTH_A=4,DATA_WIDTH_B=4,REGMODE_A="OUTREG",REGMODE_B="OUTREG"). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(119): compiling module FD1P3DX. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(160): compiling module FD1S3BX. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(168): compiling module FD1S3DX. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(76): compiling module CCU2C(INIT0=16'b0110011010101010,INIT1=16'b0110011010101010,INJECT1_0="NO",INJECT1_1="NO"). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(76): compiling module CCU2C(INIT0=16'b1001100110101010,INIT1=16'b1001100110101010,INJECT1_0="NO",INJECT1_1="NO"). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(757): compiling module VHI. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(761): compiling module VLO. VERI-1018
+WARNING - synthesis: f:/cypress_ecp/slfifo_prj/par/gpif_fifo_msb/fifo_ip/fifo_ip.v(482): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: f:/cypress_ecp/slfifo_prj/par/gpif_fifo_msb/fifo_ip/fifo_ip.v(546): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: f:/cypress_ecp/slfifo_prj/par/gpif_fifo_msb/fifo_ip/fifo_ip.v(618): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: f:/cypress_ecp/slfifo_prj/par/gpif_fifo_msb/fifo_ip/fifo_ip.v(690): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: f:/cypress_ecp/slfifo_prj/par/gpif_fifo_msb/fifo_ip/fifo_ip.v(754): input port CIN is not connected on this instance. VDB-1013
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sa5p45.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.40.
+WARNING - synthesis: There are no design constraints in the file F:/CYPRESS_ECP/slfifo_prj/PAR/gpif_fifo_msb/fifo_ip/fifo_ip.ldc
+Top-level module name = fifo_ip.
+WARNING - synthesis: There are no design constraints in the file F:/CYPRESS_ECP/slfifo_prj/PAR/gpif_fifo_msb/fifo_ip/fifo_ip.ldc
+This ldc file was generated by Clarity Designer!
+
+WARNING - synthesis: f:/cypress_ecp/slfifo_prj/par/gpif_fifo_msb/fifo_ip/fifo_ip.v(153): Removing unused instance _6. VDB-5034
+WARNING - synthesis: f:/cypress_ecp/slfifo_prj/par/gpif_fifo_msb/fifo_ip/fifo_ip.v(155): Removing unused instance _7. VDB-5034
+WARNING - synthesis: f:/cypress_ecp/slfifo_prj/par/gpif_fifo_msb/fifo_ip/fifo_ip.v(157): Removing unused instance _8. VDB-5034
+WARNING - synthesis: f:/cypress_ecp/slfifo_prj/par/gpif_fifo_msb/fifo_ip/fifo_ip.v(159): Removing unused instance _9. VDB-5034
+WARNING - synthesis: f:/cypress_ecp/slfifo_prj/par/gpif_fifo_msb/fifo_ip/fifo_ip.v(161): Removing unused instance _10. VDB-5034
+WARNING - synthesis: f:/cypress_ecp/slfifo_prj/par/gpif_fifo_msb/fifo_ip/fifo_ip.v(163): Removing unused instance _11. VDB-5034
+WARNING - synthesis: f:/cypress_ecp/slfifo_prj/par/gpif_fifo_msb/fifo_ip/fifo_ip.v(165): Removing unused instance _12. VDB-5034
+WARNING - synthesis: f:/cypress_ecp/slfifo_prj/par/gpif_fifo_msb/fifo_ip/fifo_ip.v(167): Removing unused instance _13. VDB-5034
+WARNING - synthesis: f:/cypress_ecp/slfifo_prj/par/gpif_fifo_msb/fifo_ip/fifo_ip.v(171): Removing unused instance _14. VDB-5034
+WARNING - synthesis: f:/cypress_ecp/slfifo_prj/par/gpif_fifo_msb/fifo_ip/fifo_ip.v(175): Removing unused instance _15. VDB-5034
+WARNING - synthesis: f:/cypress_ecp/slfifo_prj/par/gpif_fifo_msb/fifo_ip/fifo_ip.v(213): Removing unused instance _16. VDB-5034
+WARNING - synthesis: f:/cypress_ecp/slfifo_prj/par/gpif_fifo_msb/fifo_ip/fifo_ip.v(253): Removing unused instance _17. VDB-5034
+WARNING - synthesis: f:/cypress_ecp/slfifo_prj/par/gpif_fifo_msb/fifo_ip/fifo_ip.v(293): Removing unused instance _18. VDB-5034
+WARNING - synthesis: f:/cypress_ecp/slfifo_prj/par/gpif_fifo_msb/fifo_ip/fifo_ip.v(333): Removing unused instance _19. VDB-5034
+######## Missing driver on net n326. Patching with GND.
+######## Missing driver on net n325. Patching with GND.
+######## Missing driver on net n327. Patching with GND.
+######## Missing driver on net n328. Patching with GND.
+######## Missing driver on net n329. Patching with GND.
+
+
+
+######## GSR will not be inferred in an NGO flow, unless force_gsr=yes.
+WARNING - synthesis: There are no design constraints in the file fifo_ip_for_lpf.sdc
+Writing LPF file F:/CYPRESS_ECP/slfifo_prj/PAR/gpif_fifo_msb/fifo_ip/fifo_ip.lpf.
+Results of NGD DRC are available in fifo_ip_drc.log.
+WARNING - synthesis: DRC checking was skipped because the -ngo option was used.
+Writing NGD file F:/CYPRESS_ECP/slfifo_prj/PAR/gpif_fifo_msb/fifo_ip/fifo_ip.ngo.
+
+################### Begin Area Report (fifo_ip)######################
+Number of register bits => 39 of 44457 (0 % )
+AND2 => 3
+CCU2C => 40
+DP16KD => 4
+FD1P3DX => 37
+FD1S3BX => 1
+FD1S3DX => 1
+GSR => 1
+INV => 4
+ROM16X1A => 2
+XOR2 => 1
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 0
+Clock Enable Nets
+Number of Clock Enables: 3
+Top 3 highest fanout Clock Enables:
+  Net : wren_i, loads : 36
+  Net : rden_i, loads : 20
+  Net : fcnt_en, loads : 13
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : wren_i, loads : 36
+  Net : rden_i, loads : 20
+  Net : cnt_con, loads : 16
+  Net : fcnt_en, loads : 13
+  Net : wcount_0, loads : 5
+  Net : wcount_1, loads : 5
+  Net : wcount_2, loads : 5
+  Net : wcount_3, loads : 5
+  Net : wcount_4, loads : 5
+  Net : wcount_5, loads : 5
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk500 [get_nets Clock]                 |  200.000 MHz|  105.686 MHz|    13 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+
+Peak Memory Usage: 84.867  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.594  secs
+--------------------------------------------------------------
